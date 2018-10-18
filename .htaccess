@@ -1,0 +1,16 @@
+#Manejo de rutas amigables
+
+#Todos los links que vayan a tener urls amigables de acuerdo a la manera en como se van a configurar
+
+Options +FollowSymlinks
+
+#activa toda la progamacion del documento
+
+RewriteEngine On
+
+RewriteBase /Softporc
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^(.*)$ index.php?ruta=$1 [L]

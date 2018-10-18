@@ -1,0 +1,5 @@
+#denega el acceso a las carpetas "Evita ataques a la aplicacion"
+deny from all
+
+
+
