@@ -1,10 +1,10 @@
 <?php 
-class GestationController{
+class PeriodGestationController{
 
 	private $model;
 
 	public function __construct(){
-		$this->model = new GestationModels();
+		$this->model = new PeriodGestationModels();
 	}
 
 	public function set($gestation_data = array()){
