@@ -1,7 +1,7 @@
 <?php
 class AutoLoad{
 
-	public function__construct(){
+	public function __construct(){
 		spl_autoload_register(function($class_name){
 			$models_path='./Models/'.$class_name.'.php';
 			$controllers_path='./Controllers/'.$class_name.'.php';
