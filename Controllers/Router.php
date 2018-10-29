@@ -2,12 +2,12 @@
 class Router{
 	public $router;
 
-	public function__construct($router){
+	public function __construct($router){
 
 		$session_options = array(
-				'use_only_cookies' => 1,
-				'auto_start' => 1,
-				'read_and_close' => true
+//				'use_only_cookies' => 1,
+//				'auto_start' => 1,
+//read_and_close' => true
 		);
 
 		if(!isset($_SESSION))  session_start($session_options);
